@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HD MEDIA/ Login Form</title>
+  <link rel="stylesheet" href="css/log in/style.css">
+
+</head>
+<body>
+<div class="top-nav">
+	<h2><strong><font color="orange">HD</font> <font color="green">MEDIA</font> <font color="red"> CENTRE</font></strong> </h2>
+	 </div> 
+
+<nav>
+ <div class="nav-bar">
+ <a href="Index.html">
+	 <div class="auto-style4">
+		 <strong>Home</strong></div>
+	 </a> &nbsp;<a href="about.html">&nbsp;&nbsp;|&nbsp;&nbsp; <strong>About Us</strong></a> <a href="services.html"> 
+	 <div class="auto-style5">
+		 &nbsp;&nbsp;|&nbsp;&nbsp;<strong>Services</strong></div>
+	 </a> &nbsp;<a href="contact.html">&nbsp;&nbsp;|&nbsp;&nbsp; <strong>Contact</strong></a>  &nbsp;&nbsp;|&nbsp;&nbsp;	 <strong> <a href="login.html">Log in</a></strong>
+	  
+
+ </div>
+
+</nav>
+</box>
+
+
+
+
+
+
+<div class="signin">
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG IN</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+<style class="css sheet">
+
+.signin{
+	justify-content:center;
+	align-items:center;
+}
+body{
+	margin: 0;
+	padding: 0;
+	display:inline;
+
+
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+
+nav{
+	background-color:transparent;
+	color: white;
+	width: 100%;
+	border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+	
+	}
+
+	.top-nav{
+		text-align: center;
+		
+		position: fixed;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		background-color:black;
+		width: 100%;
+		font-size: 20px;
+		border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+		color: white;
+	}
+.nav-bar{
+	position: fixed;
+	background-color:#333333;
+	text-align:center;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+	width: 100%;
+	margin: 10px;
+}
+	
+.nav-bar h2{
+	display: inline-block;
+	float: left;
+	color: white;
+	font-size:xx-large;	
+	text-indent: 10px;
+	text-decoration:blink;
+}
+
+.nav-bar a{
+	text-align: center;
+	display: inline-block;
+	
+	color: white;
+	font-size: 20px;	
+	text-decoration: none;
+}
+
+
+.nav-bar a:hover{
+	color: magenta;
+	font-size: 20px;	
+	text-decoration: overline;
+}
+
+.body-box{
+	background-image: transparent;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-size: 1000%;
+	color: white;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	padding:255px;
+}
+
+
+.main{
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #6d44b8;
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+
+</style>
+
+
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
+<!-- partial -->
+</div>
+  
+</body>
+</html>
