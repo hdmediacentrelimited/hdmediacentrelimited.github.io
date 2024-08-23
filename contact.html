@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+	
+	<style>
+body{ 
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	background-image: url('back ground.jpg');
+	background-color: whitesmoke;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+nav{
+	background-color:transparent;
+	color: white;
+	width: 100%;
+	border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+	
+	}
+
+	.top-nav{
+		text-align: center;
+		
+		position: fixed;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		background-color:black;
+		width: 100%;
+		font-size: 20px;
+		border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+		color: white;
+	}
+.nav-bar{
+	position: fixed;
+	background-color:#333333;
+	text-align:center;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+	width: 100%;
+	margin: 10px;
+}
+	
+.nav-bar h2{
+	display: inline-block;
+	float: left;
+	color: white;
+	font-size:xx-large;	
+	text-indent: 10px;
+	text-decoration:blink;
+}
+
+.nav-bar a{
+	text-align: center;
+	display: inline-block;
+	
+	color: white;
+	font-size: 20px;	
+	text-decoration: none;
+}
+
+
+.nav-bar a:hover{
+	color: magenta;
+	font-size: 20px;	
+	text-decoration: overline;
+}
+
+.body-box{
+	background-image: transparent;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-size: 1000%;
+	color: white;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	padding:255px;
+}
+
+.body-box h2{
+	color: white;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	font-size: 40px;
+}
+
+
+.body-box button{
+    background-color: transparent;
+	color: #ff7720;
+	font-family:Arial black;
+	text-align:center;
+	font-size: 16px;
+	border: 1px white solid;
+	border-radius: 10px 0 10px 0;
+	cursor:pointer;
+}
+
+.body-box button:hover{
+    background-color: navy;
+	color: white;
+	font-family:Arial black;
+	text-align:center;
+	font-size: 16px;
+	border: 1px #66ff00 solid;
+	border-radius: 10px 0 10px 0;
+	cursor:pointer;
+}
+
+.footer{
+	background-color: #060606;
+	text-align:center;
+	color:white;
+	padding: 10px;
+	border: 2px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+
+
+	@charset "UTF-8";
+/* Body */
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-color: #FFFFFF;
+	margin: 0;
+}
+/* Container */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+}
+	
+
+	
+	
+	
+	
+/* Header */
+header {
+	width: 100%;
+	height: 8%;
+	background-color: #5D5E5D;
+	border-bottom: 1px solid #353635;
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	margin-left: auto;
+	letter-spacing: 4px;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 15px;
+	line-height: 2em;
+	font-size: 22px;
+}
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 4px;
+}
+/* About Section */
+.text_column {
+	width: 90%;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #A3A3A3;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	/* [disabled]min-width: 400px;
+*/
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.thumbnail {
+	width: 23%;
+	text-align: center;
+	float:left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid #6DC7D0;
+}
+.gallery .thumbnail h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #52BAD5;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.gallery .thumbnail p {
+	margin: 0;
+	color: #B3B3B3;
+	text-align: left;
+	padding-left: 20px;
+}
+/* More info */
+.intro {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+.intro .column h3 {
+	color: #FFFFFF;
+	text-align: center;
+}
+.intro .column p {
+	color: #FFFFFF;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+	opacity: 0.8;
+}
+.intro .column p {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 80%;
+	margin-top: 4%;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #6DC7D0;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #717070;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+
+	
+footer {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+}
+.intro {
+	display: inline-block;
+	background-color: #6DC7D0;
+}
+.profile {
+	width: 50%;
+}
+.gallery .thumbnail .tag {
+	color: #5D5E5D;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding: 0;
+}
+.intro .column p {
+	width: 80%;
+	margin-left: 0px;
+}
+.text_column {
+	padding-left: 20px;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+}
+	.email{
+			padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+	.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+	
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}	
+	
+	.box{
+				  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color:slategrey;
+  border-radius: 0.3rem;
+		text-align: center;
+	
+	font-size: 30px;
+		
+	}
+
+	.sign{
+		align-items: center;
+		background-color: forestgreen;
+		box-shadow:0 rbga(1px);
+		text-shadow:0 blur-radius(2px brown);
+		text-align: center;
+		padding: 15px;
+		width:40%;
+		heght:40px;
+		
+	}
+	
+	
+	
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: center;
+	padding-left: 0px;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 48%;
+}
+.text_column {
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+}
+.intro .column p {
+	width: 80%;
+}
+}
+nav{
+	background: transparent;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	backdrop: filter(20px);
+	
+	
+}
+	
+
+	.auto-style2 {
+		font-size: medium;
+	}
+	
+
+	.auto-style3 {
+		color: #0000FF;
+		font-size: medium;
+	}
+	
+
+	.auto-style4 {
+	width: 890px;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+	
+
+	</style>
+		
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>HD MEDIA CENTRE</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="sifr/sifr.js" type="text/javascript"></script>
+<script src="sifr/sifr-addons.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.cycle.all.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    jQuery('.slideshow').cycle({
+        fx: 'scrollDown',
+        sync: 0,
+        delay: -3000
+    });
+});
+</script>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/styleIE7.css" /><![endif]-->
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styleIE6.css">
+<script>DD_belatedPNG.fix('*')</script>
+<![endif]-->
+
+<body>
+
+<box>
+<div class="top-nav">
+	<h2> <strong><font color="orange">HD</font> <font color="green">MEDIA</font> <font color="red"> CENTRE</font></strong>  </h2>
+	 </div> 
+	<br>
+	<br>
+	<br>
+	<br>
+<nav>
+ <div class="nav-bar" style="left: 2px; top: 94px">
+ <a href="Index.html"><strong>Home</strong></a> <a href="about.html">&nbsp;&nbsp;|&nbsp;&nbsp; <strong>About Us</strong></a> <a href="services.html"> &nbsp;&nbsp;|&nbsp;&nbsp;<strong>Services</strong></a> <a href="contact.html">	&nbsp;&nbsp;|&nbsp;&nbsp; <strong>Contact</strong></a>    &nbsp;&nbsp;|&nbsp;&nbsp;	 <strong> <a href="login.html">Log in</a></strong>
+
+	  
+
+ </div>
+          <h2>&nbsp;</h2>
+          <p>You can find more about our company through our website
+		  <a href="https://www.hdmediacentrelimited.github.io">
+		  https://www.hdmediacentrelimited.github.io</a> and follow all our 
+		  social platforms.</p>
+</nav>
+</box>
+
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h1>send us your massege</h1>
+      
+			
+  <div class="content">
+    <div class="auto-style4">
+      <div class="mainbar">
+        <div class="article">
+
+        </div>
+        <div class="article">
+          <h2>Send us an email</h2>
+          <form action="#" method="post" id="sendemail">
+            <ol>
+              <li>
+                <label for="name"><font color="lime">
+				<strong class="auto-style2">NAME</strong></font color></label>&nbsp;
+                <input id="name" name="name" class="text" place holder="name" required style="height: 28px"/></li>
+              <li>
+                <label for="email"><font color="green">
+				<strong class="auto-style2">Email Address (required)</strong></font color></label>
+                <input id="email" name="email" class="text"  place holder="address" required style="height: 37px; margin-top: 11px"/>
+              </li>
+              <li>
+                <label for="website"><font color="green">
+				<strong class="auto-style2">Website</strong></font color></label>
+                <input id="website" name="website" class="text" style="height: 26px" />
+              </li>
+              <li>
+                <<label for="Message">
+				<font color="green"><strong class="auto-style2"> Your Message</strong></font color></label>
+                <textarea id="message" name="message" cols="50" style="height: 44px"></textarea>
+              </li>
+              <li>
+                <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </div>
+			
+			
+
+        </div>
+
+		
+		
+      <div class="col c3">
+        <h2>OUR SOCIAL PLATFORMS</h2>
+        <p class="auto-style3">You can contact us through our socials</p>
+		  <a href="http://wa.me/qr/NEP7VV34FJCDL1"><img src="../../../2019/images%20(3).jpeg" width="66" height="66" alt="" class="ad" /></a>
+		  <a href="https://www.youtube.com/@Professor_Raphael"><img src="../../../2019/download.png" width="66" height="66" alt="" class="ad" /></a>
+		  <a href="http://www.facebook.com/ewau.raphael"><img src="../../../2019/IMG-20240803-WA0027.jpg" width="60" height="60" alt="" class="ad" /></a><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		  <a href="http://www.instagram.com/ictprofessor?igsh=MTQ1engyczkybmI3Zg==">
+		  <img alt="" src="imgF.jpg" height="55" width="59" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <p><strong>Phone:</strong> +256780499498<br />
+          <strong>Address:</strong>plot 46 JUMABAI ROAD/ opposite NSSF buliding/ 
+		Soroti City/ Uganda<br />
+          <strong>E-mail:</strong> <a href="#">raphhd528@gmail.com</a>
+		  <strong>facebook:</strong><a href="https://www.facebook.com/ewau.raphael">raphael</a>
+		  <strong>watsapp:&gt;<a href="#">+256752731620</a><u> active always</u>
+		  </p>
+      </div>
+
+
+
+
+
+<!-- Footer Section -->
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH US TODAY</p>
+	
+	  <p class="email" >raphhd528@Gmail.com</p>
+    <div class="button"><a href="mailto:raphhd528@gmail.com">EMAIL US</a> </div>
+  </footer>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2024 - <strong>ALL Resevered by</strong><a>Bashcodes and dj bum codes</a></div>
+</div>
+			<h6>raphhd528@Gmail.com &nbsp;&nbsp;&nbsp;ALL Resevered by 
+			<a href="#">Bashcodes</a> 
+	and <a href="#">dj bum codes</a></h6>
+
+
+	</div>
+		  </strong></div>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+	
+		
+
+</body>
+</html>
